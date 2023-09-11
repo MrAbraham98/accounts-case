@@ -1,0 +1,1 @@
+flutter build apk --flavor Uat -t lib/main_uat.dart --release --obfuscate --split-debug-info=./obfuscation/android

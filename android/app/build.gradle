@@ -50,6 +50,39 @@ android {
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
     }
+    flavorDimensions "flavors"
+    productFlavors {
+        Test {
+            dimension "flavors"
+            manifestPlaceholders = [
+                    app_name: "Neyasis Test",
+            ]
+            versionNameSuffix "-test"
+            applicationId "neyasis.case.test"
+            versionCode 1
+            versionName "1.0.0"
+        }
+        Uat {
+            dimension "flavors"
+            manifestPlaceholders = [
+                    app_name: "Neyasis UAT",
+            ]
+            versionNameSuffix "-uat"
+            applicationId "neyasis.case.uat"
+            versionCode 2
+            versionName "2.0.0"
+        }
+        Prod {
+            dimension "flavors"
+            manifestPlaceholders = [
+                    app_name: "Neyasis",
+            ]
+            versionNameSuffix "-prod"
+            applicationId "neyasis.case"
+            versionCode 3
+            versionName "3.0.0"
+        }
+    }
 
     buildTypes {
         release {

@@ -1,0 +1,1 @@
+flutter build apk --flavor Test -t lib/main_test.dart --release --obfuscate --split-debug-info=./obfuscation/android
