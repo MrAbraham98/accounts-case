@@ -1,0 +1,1 @@
+flutter build ipa --flavor prod -t lib/main_prod.dart --release --obfuscate --split-debug-info=./obfuscation/ios
